@@ -14,6 +14,7 @@
     --font-normal: 400;
     --font-light: 300;
     /* === font weight === */
+    --secondary-font: "Manrope", sans-serif;
 }
 /* ===== variable css end here =====  */
 /* ===== common css start here ===== */
@@ -68,11 +69,62 @@ a {
     -ms-transition: var(--transition);
     -o-transition: var(--transition);
 }
-.nav-link:hover{
+.nav-link:hover {
     color: var(--white-clr);
 }
-.nav-link.active{
+.nav-link.active {
     color: var(--white-clr);
+}
+/* ===== navbar css end here ===== */
+/* ===== banner section start here ====== */
+#banner {
+    width: 100%;
+    padding: 128px 0;
+    background-color: var(--primary-clr);
+}
+#banner .banner_content h2 {
+    color: var(--white-clr);
+    font-size: 54px;
+    font-weight: var(--font-semibold);
+    line-height: 74px;
+    padding-bottom: 24px;
+}
+#banner .banner_content p {
+    color: var(--white-clr);
+    font-size: 16px;
+    font-weight: var(--font-medium);
+    line-height: 28px;
+    padding-bottom: 48px;
+}
+.banner_btn {
+    display: flex;
+    column-gap: 40px;
+}
+.banner_btn .common_btn a {
+    background-color: #fcd980;
+    color: #1b1c2b;
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: var(--font-semibold);
+    line-height: 32px;
+}
+.banner_btn > a {
+    color: var(--white-clr);
+    font-size: 16px;
+    font-weight: var(--font-medium);
+    line-height: 28px;
+}
+.banner_btn > a span {
+    padding-left: 16px;
+}
+.banner_shape {
+    width: 638px;
+    height: 360px;
+    flex-shrink: 0;
+    overflow: hidden;
+    object-fit: cover;
 }
 
-/* ===== navbar css end here ===== */
+
+/* ===== banner section start here ====== */
